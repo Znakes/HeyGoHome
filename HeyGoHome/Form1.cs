@@ -246,5 +246,23 @@ namespace HeyGoHome
                 UpdateTimeFormatFromSettings();
             }
         }
+
+        private void startNewDayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (
+                MessageBox.Show(@"Start new day and set " + DateTime.Now.ToShortTimeString() + @" as beginning?",
+                    @"Restart", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                startTime = DateTime.Now;
+                WriteFile(true);
+                SetStaticLabels();
+            }
+        }
+
+        private void whatsNewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(@"Added Start new day function", "What's new?", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
     }
 }

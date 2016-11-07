@@ -48,6 +48,9 @@
             this.timeSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.VersionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.startNewDayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whatsNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -91,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 22);
+            this.label1.Size = new System.Drawing.Size(66, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ты пришел:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +106,7 @@
             this.arrivalTime.AutoSize = true;
             this.arrivalTime.Location = new System.Drawing.Point(75, 0);
             this.arrivalTime.Name = "arrivalTime";
-            this.arrivalTime.Size = new System.Drawing.Size(0, 22);
+            this.arrivalTime.Size = new System.Drawing.Size(0, 24);
             this.arrivalTime.TabIndex = 2;
             this.arrivalTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -112,9 +115,9 @@
             this.finishTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.finishTime.AutoSize = true;
-            this.finishTime.Location = new System.Drawing.Point(75, 22);
+            this.finishTime.Location = new System.Drawing.Point(75, 24);
             this.finishTime.Name = "finishTime";
-            this.finishTime.Size = new System.Drawing.Size(0, 22);
+            this.finishTime.Size = new System.Drawing.Size(0, 24);
             this.finishTime.TabIndex = 4;
             this.finishTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -124,9 +127,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 22);
+            this.label3.Location = new System.Drawing.Point(3, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 22);
+            this.label3.Size = new System.Drawing.Size(66, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Ты уйдешь:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,9 +139,9 @@
             this.timeLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.timeLeft.AutoSize = true;
-            this.timeLeft.Location = new System.Drawing.Point(75, 44);
+            this.timeLeft.Location = new System.Drawing.Point(75, 48);
             this.timeLeft.Name = "timeLeft";
-            this.timeLeft.Size = new System.Drawing.Size(0, 24);
+            this.timeLeft.Size = new System.Drawing.Size(0, 25);
             this.timeLeft.TabIndex = 6;
             this.timeLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -148,9 +151,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 44);
+            this.label4.Location = new System.Drawing.Point(3, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 24);
+            this.label4.Size = new System.Drawing.Size(66, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Осталось:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -175,7 +178,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(205, 68);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(204, 73);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // menuStrip1
@@ -183,11 +186,12 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.settingsToolStripMenuItem1,
+            this.toolStripMenuItem1,
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(229, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(228, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -202,7 +206,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -224,7 +228,8 @@
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.VersionMenuItem});
+            this.VersionMenuItem,
+            this.whatsNewToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
@@ -235,11 +240,33 @@
             this.VersionMenuItem.Size = new System.Drawing.Size(93, 22);
             this.VersionMenuItem.Text = "Ver.";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startNewDayToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(59, 20);
+            this.toolStripMenuItem1.Text = "Actions";
+            // 
+            // startNewDayToolStripMenuItem
+            // 
+            this.startNewDayToolStripMenuItem.Name = "startNewDayToolStripMenuItem";
+            this.startNewDayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startNewDayToolStripMenuItem.Text = "Start new day";
+            this.startNewDayToolStripMenuItem.Click += new System.EventHandler(this.startNewDayToolStripMenuItem_Click);
+            // 
+            // whatsNewToolStripMenuItem
+            // 
+            this.whatsNewToolStripMenuItem.Name = "whatsNewToolStripMenuItem";
+            this.whatsNewToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.whatsNewToolStripMenuItem.Text = "What\'s new?";
+            this.whatsNewToolStripMenuItem.Click += new System.EventHandler(this.whatsNewToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(229, 107);
+            this.ClientSize = new System.Drawing.Size(228, 112);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -284,6 +311,9 @@
         private System.Windows.Forms.ToolStripMenuItem timeSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem VersionMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem startNewDayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whatsNewToolStripMenuItem;
     }
 }
 
