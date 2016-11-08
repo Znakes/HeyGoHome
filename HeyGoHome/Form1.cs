@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Deployment.Application;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -145,7 +146,6 @@ namespace HeyGoHome
                         _firstTime = false;
                         countOfSecTorepeat = 0;
                         MessageBox.Show(@"Пора домой!", @"Уходи", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                       
                     }
 
                 }
@@ -155,6 +155,11 @@ namespace HeyGoHome
             {
                 if (notifyIcon1.Icon != Resources.soon)
                     notifyIcon1.Icon = Resources.soon;
+            }
+            else
+            {
+                if (notifyIcon1.Icon != Resources.logo)
+                    notifyIcon1.Icon = Resources.logo;
             }
         }
 
