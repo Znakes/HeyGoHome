@@ -266,7 +266,11 @@ namespace HeyGoHome
 
         private void whatsNewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(@"Added Start new day function", "What's new?", MessageBoxButtons.OK,
+            StringBuilder sb = new StringBuilder(100);
+            sb.AppendLine(@"Added Start new day function");
+            sb.AppendLine(@"Fixed icon update after day restart");
+
+            MessageBox.Show(sb.ToString(), @"What's new?", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
     }
